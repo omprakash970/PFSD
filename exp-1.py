@@ -19,6 +19,7 @@ student_name = "Om Prakash"    # str
 marks = 92.5                   # float
 attendance_status = True       # bool
 
+
 # 4. Display value and data type of each variable
 print("Student ID:", student_id, "| Data Type:", type(student_id))
 print("Student Name:", student_name, "| Data Type:", type(student_name))
