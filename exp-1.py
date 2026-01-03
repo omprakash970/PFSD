@@ -1,8 +1,6 @@
 # Experiment 1: Python Basics
-
 # 1. Read a number from the user
 num = int(input("Enter a number: "))
-
 # 2. Check whether the number is positive, negative, or zero
 if num > 0:
     print("The number is Positive")
@@ -13,12 +11,12 @@ else:
 
 print("\n--- Student Details ---")
 
+
 # 3. Create variables for student details
 student_id = 1024              # int
 student_name = "Om Prakash"    # str
 marks = 92.5                   # float
 attendance_status = True       # bool
-
 
 # 4. Display value and data type of each variable
 print("Student ID:", student_id, "| Data Type:", type(student_id))
