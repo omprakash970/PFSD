@@ -14,8 +14,6 @@ class Student:
         print("Name:", self.name)
         print("Marks:", self.get_marks())
 
-
-# Derived class (Inheritance)
 class GraduateStudent(Student):
     def __init__(self, student_id, name, marks, specialization):
         super().__init__(student_id, name, marks)
@@ -34,3 +32,4 @@ student1.display_details()
 
 print("\n--- Graduate Student Details ---")
 student2.display_details()
+
