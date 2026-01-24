@@ -1,6 +1,4 @@
-# Experiment 1: Python Basics
 num = int(input("Enter a number: "))
-
 if num > 0:
     print("The number is Positive")
 elif num < 0:

@@ -6,7 +6,7 @@ def analyze_sales_data(csv_file="sales_data.csv"):
         csv_path = os.path.join(os.path.dirname(__file__), csv_file)
         df = pd.read_csv(csv_path)
 
-        print("\n✅ CSV Loaded Successfully!\n")
+        print("\n CSV Loaded Successfully!\n")
         print(df.head())
 
         df["date"] = pd.to_datetime(df["date"], errors="coerce")
