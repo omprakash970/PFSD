@@ -1,7 +1,8 @@
-date,product_category,sales_amount
-2025-01-01,Electronics,1200
-2025-01-05,Fashion,800
-2025-02-10,Electronics,1500
-2025-02-15,Grocery,500
-2025-02-20,Fashion,
-2025-03-01,Electronics,abc
+date,category,sales
+2024-01-05,Electronics,1200
+2024-01-10,Clothing,800
+2024-01-15,Electronics,
+2024-02-03,Groceries,500
+2024-02-12,Clothing,700
+2024-02-20,Electronics,1500
+2024-01-25,Groceries,400
