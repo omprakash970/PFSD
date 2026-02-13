@@ -1,3 +1,1 @@
-Student ID: clear
-Student Name: clear
-Attendance: clear
+oppie:p
