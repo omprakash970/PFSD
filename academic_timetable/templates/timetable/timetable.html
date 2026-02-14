@@ -1,0 +1,50 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Academic Timetable</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Academic Timetable</h1>
+            <p class="subtitle">
+                <strong>Name:</strong> {{ student.name }} &nbsp;|&nbsp;
+                <strong>Branch:</strong> {{ student.branch }} &nbsp;|&nbsp;
+                <strong>Year:</strong> {{ student.year }}
+            </p>
+        </header>
+
+        <section class="timetable">
+            {% for day, periods in weekly_timetable.items %}
+            <div class="day-card">
+                <h2 class="day-title">{{ day }}</h2>
+                <table class="schedule-table">
+                    <thead>
+                        <tr>
+                            <th>Time</th>
+                            <th>Subject</th>
+                            <th>Room</th>
+                            <th>Teacher</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for p in periods %}
+                        <tr>
+                            <td>{{ p.time }}</td>
+                            <td>{{ p.subject }}</td>
+                            <td>{{ p.room }}</td>
+                            <td>{{ p.teacher }}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+            {% endfor %}
+        </section>
+    </div>
+</body>
+</html>
